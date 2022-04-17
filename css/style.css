@@ -1,0 +1,466 @@
+body {
+  line-height: 1.75;
+  font-size: 16px;
+  font-family: 'Helvetica',
+    -apple-system,
+    BlinkMacSystemFont,
+    YuGothic,
+    "Yu Gothic Medium",
+    "Yu Gothic",
+    'ヒラギノ角ゴ ProN W3',
+    Hiragino Kaku Gothic ProN,
+    Arial,
+    'メイリオ',
+    Meiryo,
+    sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*パディングをサイズ内側にする処理*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*トップラッパー及びボタンに関するCSS
+---------------------*/
+.top-wrapper {
+  background-image: url("../img/mainbg.png");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-title {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: .1em;
+  font-weight: bold;
+  mix-blend-mode: overlay;
+}
+
+.top-subtitle {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  mix-blend-mode: overlay;
+}
+
+.top-subsubtitle {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  mix-blend-mode: overlay;
+}
+
+/*ヘッダーに関するCSS
+---------------------*/
+
+/* sns icon */
+#sns-icon img {
+  width: 25px;
+}
+
+#sns-icon {
+  position: absolute;
+  right: 30px;
+  top: 5%;
+  mix-blend-mode: overlay;
+  display: flex;
+}
+
+#sns-icon li {
+  margin: 0 15px 0 0;
+}
+
+.header_logo img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.site-header {
+  border-bottom: 2px solid black;
+  position: relative;
+  z-index: 10;
+}
+
+.site_header_container {
+  margin: 0px 40px;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__wrapper {
+  display: flex;
+}
+
+/* .nav__item a {
+  display: block;
+  padding: 1.5rem 2rem;
+  color: black;
+} */
+
+/* .nav__item a:hover {
+  background-color: #c4c4c4;
+  opacity: 0.7;
+} */
+
+/*About-wrapper
+---------------------*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contents-title {
+  color: #f8b62d;
+  font: 24px;
+  margin-bottom: 24px;
+}
+
+.about-container {
+  margin: 120px 0px 80px 0px;
+  text-align: center;
+  width: 50%;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 5px;
+  /*スライド左右の余白調整*/
+}
+
+
+/* .course_sectionのCSS */
+.course_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course_title {
+  font: 24px;
+  margin-bottom: 24px;
+}
+
+.course_section_container {
+  margin: 64px 0px;
+  width: 40%;
+  text-align: center;
+}
+
+.course_section h3 {
+  text-align: center;
+}
+
+
+/* image_sectionのCSS指定 */
+.img_section {
+  display: flex;
+  font-size: 16px;
+  background-color: lightgray;
+}
+
+.img_section_img {
+  width: 50%;
+}
+
+.img_section_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.img_section_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_section_text div {
+  width: 80%;
+}
+
+.concept_section {
+  display: flex;
+}
+
+.concept_section_container {
+  width: 80%;
+  margin-left: 5%;
+}
+
+/* news_sectionのCSS */
+.news_section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news_section_title {
+  margin: 64px 0px;
+}
+
+.news_section_title h3 {
+  font-size: 24px;
+}
+
+.news_contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  font-size: 14px;
+}
+
+.news_content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.news_content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.section_title {
+  margin: 64px 0px;
+  text-align: center;
+}
+
+.section_title h3 {
+  font-size: 24px;
+}
+
+
+/* アクセスのCSS */
+.access_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+.access_information {
+  margin: 5%;
+}
+
+.access_section td {
+  padding: 5px 20px;
+}
+
+/* コンタクトフォーム */
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_explain {
+  text-align: center;
+  width: 40%;
+}
+
+.contact_form td {
+  padding: 10px 20px;
+}
+
+.contact_form table {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.contact_form textarea {
+  border: 1px solid #bfbfbf;
+  width: 328px;
+  height: 108px;
+}
+
+.contact_input {
+  border: 1px solid #bfbfbf;
+  height: 36px;
+  width: 328px;
+}
+
+.contact_btn {
+  text-align: center;
+}
+
+.btn input {
+  display: inline-block;
+  background: #f8b62d;
+  padding: 10px 40px;
+  color: white;
+  cursor: pointer;
+  margin: 40px 0px;
+}
+
+.btn input:hover {
+  opacity: 0.7;
+}
+
+.gotop {
+  display: block;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  background: #FFF;
+  border: 1px solid #f8b62d;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 85%;
+  text-decoration: none;
+  color: #f8b62d;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+
+.gotop::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #f8b62d;
+  border-right: 2px solid #f8b62d;
+  width: 25%;
+  height: 25%;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.gotop:hover {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #c4c4c44b;
+  color: #000;
+  font-size: 14px;
+}
+
+footer p {
+  padding: 32px 0px;
+}
+
+
+.box17 {
+  margin: 2em 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.box17:before,
+.box17:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: black;
+}
+
+.box17:before {
+  left: 10px;
+}
+
+.box17:after {
+  right: 10px;
+}
+
+.box17 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 文字を一文字ずつ出現させるためのCSS */
+.eachTextAnime span {
+  opacity: 0;
+}
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* モーダルのためのCSS */
+/*infoエリアをはじめは非表示*/
+#info {
+  display: none;
+}
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container {
+  max-width: 600px;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #666;
+}
